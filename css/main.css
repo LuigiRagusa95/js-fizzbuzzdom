@@ -33,4 +33,4 @@ body {
 .fsz-48 { font-size: 3rem; line-height: 3.5rem; }
 
 .row { display: flex; flex-wrap: wrap; }
-.square { display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; margin: 4px; font-size: 0.875rem; }
+.square { display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; margin: 4px; font-size: 0.875rem; }

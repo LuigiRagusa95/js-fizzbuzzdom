@@ -1,3 +1,4 @@
+// version row and square
 let sum = 0;
 let string = '';
 
@@ -19,4 +20,21 @@ for (let i = 1; i <= row; i++) {
     }
     string += '</div>';
 }
-board.innerHTML = string;
+// board.innerHTML = string;
+
+// Version only square
+let dom = '';
+let br = 10;
+let sqaure = 100;
+
+for (let i = 1; i <= sqaure; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        dom += `<div class="square bg-fizzbuzz">fizzbuzz</div>${i % br === 0 ? `</br>` : ''}`;
+    } else if (i % 3 === 0) {
+        dom += `<div class="square bg-fizz">fizz</div>${i % br === 0 ? `</br>` : ''}`;
+    } else if (i % 5 === 0) {
+        dom += `<div class="square bg-buzz">buzz</div>${i % br === 0 ? `</br>` : ''}`;
+    } else dom += `<div class="square bg-square">${i}</div>${i % br === 0 ? `</br>` : ''}`;
+    console.log(i);
+}
+board.innerHTML = dom;
