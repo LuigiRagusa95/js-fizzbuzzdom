@@ -1,5 +1,5 @@
-let string = '';
 let sum = 0;
+let string = '';
 
 const row = 7;
 const square = 7;
@@ -19,5 +19,4 @@ for (let i = 1; i <= row; i++) {
     }
     string += '</div>';
 }
-board.innerHTML += string;
-console.log(sum);
+board.innerHTML = string;
