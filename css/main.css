@@ -15,5 +15,23 @@ body {
 body {
     display: flex;
     align-items: center;
+    font-family: sans-serif;
     justify-content: center;
 }
+
+/* Utilities */
+.pb-32 { padding-bottom: 2rem; }
+.fxd-column { flex-direction: column; }
+
+.bg-screen { background: #083b4c; }
+.bg-square { background: #1389b2; }
+
+.bg-fizz { background: #0bd6a1; }
+.bg-buzz { background: #ffd166; }
+.bg-fizzbuzz { background: #f0466f; }
+
+.clr-white { color: #ffffff; }
+.fsz-48 { font-size: 3rem; line-height: 3.5; }
+
+.row { display: flex; flex-wrap: wrap; }
+.square { display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; margin: 4px; }
