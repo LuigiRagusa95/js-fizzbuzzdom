@@ -11,30 +11,30 @@ for (let i = 1; i <= row; i++) {
     for (let j = 1; j <= square; j++) {
         sum += 1;
         if (sum % 3 === 0 && sum % 5 === 0) {
-            string += `<div class="square bg-fizzbuzz">fizzbuzz</div>`;
+            string += `<div class="flex square bg-fizzbuzz">fizzbuzz</div>`;
         } else if (sum % 3 === 0) {
-            string += `<div class="square bg-fizz">fizz</div>`;
+            string += `<div class="flex square bg-fizz">fizz</div>`;
         } else if (sum % 5 === 0) {
-            string += `<div class="square bg-buzz">buzz</div>`;
-        } else string += `<div class="square bg-square">${sum}</div>`;
+            string += `<div class="flex square bg-buzz">buzz</div>`;
+        } else string += `<div class="flex square bg-square">${sum}</div>`;
     }
     string += '</div>';
 }
-// board.innerHTML = string;
+board.innerHTML = string;
 
 // Version only square
-let dom = '';
-let br = 10;
-let sqaure = 100;
+// let dom = '';
+// let br = 10;
+// let sqaure = 100;
 
-for (let i = 1; i <= sqaure; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-        dom += `<div class="square bg-fizzbuzz">fizzbuzz</div>${i % br === 0 ? `</br>` : ''}`;
-    } else if (i % 3 === 0) {
-        dom += `<div class="square bg-fizz">fizz</div>${i % br === 0 ? `</br>` : ''}`;
-    } else if (i % 5 === 0) {
-        dom += `<div class="square bg-buzz">buzz</div>${i % br === 0 ? `</br>` : ''}`;
-    } else dom += `<div class="square bg-square">${i}</div>${i % br === 0 ? `</br>` : ''}`;
-    console.log(i);
-}
-board.innerHTML = dom;
+// for (let i = 1; i <= sqaure; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//         dom += `<div class="square bg-fizzbuzz">fizzbuzz</div>${i % br === 0 ? `</br>` : ''}`;
+//     } else if (i % 3 === 0) {
+//         dom += `<div class="square bg-fizz">fizz</div>${i % br === 0 ? `</br>` : ''}`;
+//     } else if (i % 5 === 0) {
+//         dom += `<div class="square bg-buzz">buzz</div>${i % br === 0 ? `</br>` : ''}`;
+//     } else dom += `<div class="square bg-square">${i}</div>${i % br === 0 ? `</br>` : ''}`;
+//     console.log(i);
+// }
+// board.innerHTML = dom;

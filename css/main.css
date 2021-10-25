@@ -32,5 +32,6 @@ body {
 .clr-white { color: #ffffff; }
 .fsz-48 { font-size: 3rem; line-height: 3.5rem; }
 
+.flex { display: flex !important; }
 .row { display: flex; flex-wrap: wrap; }
 .square { display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; margin: 4px; font-size: 0.875rem; }
