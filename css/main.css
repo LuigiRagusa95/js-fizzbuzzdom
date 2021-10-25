@@ -16,11 +16,10 @@ body {
     display: flex;
     align-items: center;
     font-family: sans-serif;
-    justify-content: center;
 }
 
 /* Utilities */
-.pb-32 { padding-bottom: 2rem; }
+.p-8 { padding: .5rem; }
 .fxd-column { flex-direction: column; }
 
 .bg-screen { background: #083b4c; }
@@ -31,7 +30,7 @@ body {
 .bg-fizzbuzz { background: #f0466f; }
 
 .clr-white { color: #ffffff; }
-.fsz-48 { font-size: 3rem; line-height: 3.5; }
+.fsz-48 { font-size: 3rem; line-height: 3.5rem; }
 
 .row { display: flex; flex-wrap: wrap; }
-.square { display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; margin: 4px; }
+.square { display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; margin: 4px; font-size: 0.875rem; }
